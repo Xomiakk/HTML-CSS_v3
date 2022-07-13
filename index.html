@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Test-v2</title>
+		<title>Test-v3</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="catalog.css">
 	</head>
 	<body>
-		<div id="page">
+		
 			<div id="header_one">
 				<div id="header">
 					<img 
@@ -16,7 +17,32 @@
 					title="logo">
 					<div class="contacts">
 						+7(499) 777-77-77<br>
-						+7(499) 777-77-77
+						+7(499) 777-77-77<br>						
+						<div id="openModal" class="modal">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <p class="modal-title">Обратная связь</p>
+						        <a href="#" class="close"><img src="images/close.png"></a>
+						      </div>
+							    <div class="modal-body"> 
+									<form class="form" name="feedback" method="POST" action="#">								
+										<p class="feedback"> Имя* </p>
+										<input class="input" type="text" name="name" required="required">																	
+										<p class="feedback"> Телефон* </p>
+										<input class="input" type="tel" name="tel" required="required">									
+										<p class="feedback"> Email* </p>
+										<input class="input" type="email" name="email" required="required">						
+										<p class="feedback"> Сообщение </p>
+										<textarea class="input_message" name="message"></textarea>
+										<input class="button" type="submit" name="submit_btn" value="ОТПРАВИТЬ">
+										
+									</form>								
+							    </div>
+							    </div>
+							  </div>
+							</div>
+							<a href="#openModal" class="href">Обратная связь</a>
 					</div>
 				</div>
 			</div>
@@ -37,60 +63,199 @@
 					</div>
 				</div>
 			</div>
-			<div id="slider">
-				<img 
-				src="images/slider.png" 
-				class="slider"
-				alt="slider"
-				title="slider">
-			</div>
-			<div id="content_one">
-				<div id="content">
-					<div class="news">
-						<ul>
-							<li class="head"> Новости </li>
-							<li> <br> </li>
-							<li>
-								<a href="#"> 14 сентября 2013 г. </a> <br>
-								Редизайн веб-сайта архитектурного <br>
-								бюро.
-							</li>
-							<li> <br> </li>
-							<li>
-								<a href="#"> 14 сентября 2013 г. </a> <br>
-								Раскрутка интернет-магазина 
-								декоративных стикеров и виниловых 
-								наклеек.
-							</li>
-							<li> <br> </li>
-							<li>
-								<a href="#"> 14 сентября 2013 г. </a> <br>
-								SEO-продвижение сайта поставщика 
-								дизель генераторов.
-							</li>
-							<li> <br> </li>
-							<li>
-								<a href="#"> 14 сентября 2013 г. </a> <br>
-								Поисковое продвижение веб-сайта 
-								поставщика гидрооборудования.
-							</li>
-							<li> <br> </li>
-							<li class="arhive"> <a href="#"> Архив новостей </a> </li>
-						</ul>
+			<div class="slideshow">
+				<div class="slider">
+					<div class="slideshow-item">
+						<img src="images/1.png" alt="1">
+						<div class="slideshow-item-text">
+						</div>
 					</div>
-					<div class="company">
-						<p class="pixel"> Компания "Пиксель Плюс" </p>
-						<p class="content">
-						<br> 
-							Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде. <br>
-							<br>
-							Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе. <br>
-							<br>
-							Наша компания является золотым сертифицированным партнёром «1С-Битрикс» (сертификат № 33939 с 2007 по 2013), что ещё раз подтверждает квалификацию наших сотрудников. В январе 2013 мы стали лидерами продаж продуктов «1С-Битрикс» и вошли в число лучших разработчиков сайтов России. Все специалисты занимающиеся изготовлением сайтов проходят обязательную сертификацию «1С-Битрикс» в течении первых 6 месяцев работы в компании, после чего продолжают непрерывно поддерживать и развивать свои профессиональные навыки. <br>
-						</p>
+
+					<div class="slideshow-item">
+						<img src="images/2.png" alt="2">
+						<div class="slideshow-item-text">						
+						</div>
 					</div>
 				</div>
 			</div>
+			<div id="content">
+				<div id="navigation">
+					<p><a href="#">Главная</a> / <a href="#">Каталог</a> / <a href="#">Бытовая техника</a></p>
+				</div>
+				<div id="left">
+					<div id="catalog">
+						<ul class="catalog">
+							<li class="directory" ><a href="#">Автомобили</a>
+							 <ul> 
+							  <li class="subdirectory" ><a href="#">Кроссоверы</a></li> 
+							  <li class="subdirectory"><a href="#">Седаны</a></li> 
+							  <li class="subdirectory"><a href="#">Купе</a></li> 
+							  <li class="subdirectory"><a href="#">Пикапы</a></li> 
+							 </ul> 
+							</li> 
+							<li class="directory"><a href="#">Бытовая техника</a> 
+							 <ul> 
+							  <li class="subdirectory"><a href="#">Микроволновки</a></li> 
+							  <li class="subdirectory"><a href="#">Холодильники</a></li> 
+							  <li class="subdirectory"><a href="#">Посудомоечные машины</a></li> 
+							  <li class="subdirectory"><a href="#">Чайники</a></li> 
+							 </ul> 
+							</li>
+							<li class="directory"><a href="#">Мобильная техника</a> 
+								<ul> 
+								 <li class="subdirectory"><a href="#">Смартфоны</a></li> 
+								 <li class="subdirectory"><a href="#">Аксессуары</a></li> 
+								 <li class="subdirectory"><a href="#">Наушники</a></li> 
+								 <li class="subdirectory"><a href="#">Кнопочные телефоны</a></li> 
+								</ul> 
+							   </li>
+							   <li class="directory"><a href="#">Компьютеры</a> 
+								<ul> 
+								 <li class="subdirectory"><a href="#">Мониторы</a></li> 
+								 <li class="subdirectory"><a href="#">Мыши</a></li> 
+								 <li class="subdirectory"><a href="#">Клавиатуры</a></li> 
+								 <li class="subdirectory"><a href="#">Акустика</a></li> 
+								</ul> 
+							   </li>
+							   <li class="directory"><a href="#">Одежда</a> 
+								<ul> 
+								 <li class="subdirectory"><a href="#">Штаны</a></li> 
+								 <li class="subdirectory"><a href="#">Кофты</a></li> 
+								 <li class="subdirectory"><a href="#">Верхняя одежда</a></li> 
+								 <li class="subdirectory"><a href="#">Шапки</a></li> 
+								</ul> 
+							   </li>
+							   <li class="directory"><a href="#">Недвижимость</a> 
+								<ul> 
+								 <li class="subdirectory"><a href="#">Однокомнатные</a></li> 
+								 <li class="subdirectory"><a href="#">Двухкомнатные</a></li> 
+								 <li class="subdirectory"><a href="#">Студия</a></li> 							
+								</ul> 
+							   </li> 
+						   </ul>
+			 		</div>
+			 		<img 
+				 	src="images/price.png"
+				 	class="pricelogo" 
+				 	alt="price"
+				 	title="price">
+					<p class="pricelist" >Прайс-лист</p>
+				</div>
+
+				<div id="center">
+					<div id="tovar">
+						<img 
+						src="images/tovar.png"
+						class="tovar" 
+						alt="tovar"
+						title="tovar">
+						<p class="describe" > <a href="#">Самый клевый чайник, который надо купить!</a></p>
+						<p class="price" >1900 p.</p>
+						<a href="#"> <img 
+						src="images/basket.png"
+						class="basket" 
+						alt="basket"
+						title="basket"></a>
+					</div>
+					<div id="tovar">
+						<img 
+						src="images/tovar.png"
+						class="tovar" 
+						alt="tovar"
+						title="tovar">
+						<p class="describe" > <a href="#">Самый клевый чайник, который надо купить!</a></p>
+						<p class="price" >1900 p.</p>
+						<a href="#"> <img 
+						src="images/basket.png"
+						class="basket" 
+						alt="basket"
+						title="basket"></a>
+					</div>
+					<div id="tovar">
+						<img 
+						src="images/tovar.png"
+						class="tovar" 
+						alt="tovar"
+						title="tovar">
+						<p class="describe" > <a href="#">Самый клевый чайник, который надо купить!</a></p>
+						<p class="price" >1900 p.</p>
+						<a href="#"> <img 
+						src="images/basket.png"
+						class="basket" 
+						alt="basket"
+						title="basket"></a>
+					</div>
+					<div id="tovar">
+						<img 
+						src="images/tovar.png"
+						class="tovar" 
+						alt="tovar"
+						title="tovar">
+						<p class="describe" > <a href="#">Самый клевый чайник, который надо купить!</a></p>
+						<p class="price" >1900 p.</p>
+						<a href="#"> <img 
+						src="images/basket.png"
+						class="basket" 
+						alt="basket"
+						title="basket"></a>
+					</div>
+					<div id="tovar">
+						<img 
+						src="images/tovar.png"
+						class="tovar" 
+						alt="tovar"
+						title="tovar">
+						<p class="describe" > <a href="#">Самый клевый чайник, который надо купить!</a></p>
+						<p class="price" >1900 p.</p>
+						<a href="#"> <img 
+						src="images/basket.png"
+						class="basket" 
+						alt="basket"
+						title="basket"></a>
+					</div>
+				</div>
+				<div id="bottom">
+					<p class="page">
+						<a href="#">1 </a>
+						<a href="#">2 </a>
+						<a href="#">3 </a>
+						<a href="#">4 </a>
+						<a href="#">5 </a>
+						<a href="#">6 </a>
+						<a href="#">7 </a>
+					</p>
+					<hr class="line">
+				</div>
+					<div class="comment">
+						<p>
+							Компания «Пиксель Плюс» существует 
+							более 6 лет, за это время мы принимали 
+							участие в разработке более чем 700 сайтов, 
+							поэтому можем уверенно называть себя 
+							профессионалами. На данный момент наш 
+							коллектив состоит из более чем 30 
+							сотрудников работающих в двух офисах в 
+							Москве и Зеленограде.характерные для 
+							этого жанра мотивы: неразделённой любви, 
+							ухода молодости, угасания души.
+						</p>
+					</div>
+
+					<div class="comment" style="margin-right: 0px;">
+						<p>
+							Одним из основных направлений работ нашей 
+							компании является поисковое продвижение сайтов, 
+							на данной момент мы работаем с более чем 150 
+							постоянными клиентами по более чем 11 000 
+							поисковым запросам. При этом в работе основной 
+							акцент мы делаем на качестве работ, а так же 
+							применяем собственные уникальные разработки в 
+							области SEO продвижения. На данный момент отдел 
+							SEO состоит из 9 человек под руководством ведущего 
+							специалиста, преимущественно работающих в нашем московском офисе.
+						</p>
+					</div>
+			</div>	
 			<div id="footer_one">
 				<div id="footer">
 					<div class="footer_left">
